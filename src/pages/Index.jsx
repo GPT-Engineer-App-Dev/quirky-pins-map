@@ -29,7 +29,7 @@ const Index = () => {
   const markers = generateRandomCoordinates(20);
 
   return (
-    <div className="h-screen w-full">
+    <div className="h-[calc(100vh-64px)] w-full">
       <MapContainer center={[40.7128, -74.0060]} zoom={11} style={{ height: '100%', width: '100%' }}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
